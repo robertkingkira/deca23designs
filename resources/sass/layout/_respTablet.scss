@@ -1,0 +1,648 @@
+/* Burger Menu Lines */
+@media only screen and (max-width: 850px) {
+
+    /* Gradient NAV */
+    #gradient-nav {
+        height: 21rem;
+    }
+
+    /* HEADER MAIN */
+    #main-header {
+        display: flex;
+        // top: 4%;
+    }
+
+    .header-main {
+        height: 16rem;
+    }
+
+    /* LOGO CONTAINER 850px */
+    .logoImg {
+        height: 60%;
+        animation: none;
+    }
+
+    .logoImg23 {
+        height: 28%;
+        animation: none;
+    }
+
+    // .navLogo {
+    //     height: 15vh;
+    // }
+
+    // .navLogo23 {
+    //     height: 17vh;
+    // }
+
+    /* First NAV BAR DESKTOP */
+    .nav-ul-left,
+    .nav-ul-right {
+        display: none;
+    }
+
+    .logoContainer {
+        flex: 1;
+        display: flex;
+        margin-top: 1rem;
+    }
+
+    /* END -- NAV BAR DESKTOP */
+
+    /* BURGER NAV BAR */
+    .burger-nav {
+        display: flex;
+        // width: 90%;
+        margin: auto;
+        align-items: center;
+        font-family: $poppins;
+    }
+
+    .nav-ul-burger {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        // justify-content: center;
+        list-style: none;
+        background: linear-gradient(227deg, $color-blue-dark2, $color-blue-dark);
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        left: 100%;
+        transition: transform 1s ease;
+    }
+
+    .nav-li-burger {
+        padding: 7rem;
+    }
+
+    .nav-link-burger {
+        color: $color-white;
+        font-size: 2.8rem;
+        text-decoration: none;
+
+        &:hover {
+            color: darken($color-white, 20%);
+            text-decoration: none;
+        }
+    }
+
+    .burger-menu-icon {
+        display: flex;
+        flex-direction: column;
+        width: 4rem;
+        height: 4rem;
+        margin: 3rem;
+        cursor: pointer;
+        position: fixed;
+        top: 0;
+        right: 0;
+        z-index: 100;
+    }
+
+    .burger-line1 {
+        padding: .2rem 1.8rem;
+        background: $color-gray;
+        margin: .5rem 0rem;
+        border-radius: 1rem;
+    }
+
+    .burger-line2 {
+        padding: .2rem 1rem;
+        width: 1rem;
+        background: $color-gray;
+        margin: .5rem 0rem 0rem auto;
+        border-radius: 1rem;
+        transition: padding .3s ease;
+        animation: line-grow ease;
+    }
+
+    .nav-open {
+        transform: translateX(-100%);
+    }
+
+    .toggle .burger-line1 {
+        transform: rotateZ(45deg) translateY(300%);
+    }
+
+    .toggle .burger-line2 {
+        transform: rotateZ(-45deg) translateY(-300%);
+        padding: .2rem 1.8rem;
+    }
+
+    /* END -- BURGER NAV BAR */
+
+    // WELCOME Section 850px
+    .heading-welcome-first {
+        font-size: 5rem;
+    }
+
+    .heading-welcome-first2 {
+        font-size: 1.5rem;
+    }
+
+    .heading-welcome-second {
+        font-size: 3rem;
+    }
+
+    .heading-welcome-third {
+        font-size: 2.4rem;
+        text-align: center;
+    }
+
+    .bubbles-container {
+        display: flex;
+        justify-content: space-around;
+        width: 90%;
+        margin: -16rem auto 0;
+    }
+
+    .bubble-yellow-wrapper {
+        width: 21rem;
+        // margin-left: -5rem;
+    }
+
+    .bubble-yellow-wrapper2 {
+        right: 35%;
+        top: 25rem;
+        width: 2rem;
+    }
+
+    .bubble-yellow-wrapper3 {
+        right: 42%;
+        top: 22rem;
+        width: 1rem;
+    }
+
+    .bubble-blue-wrapper {
+        width: 21rem;
+        margin-right: 2rem;
+    }
+
+    .bubble-blue-wrapper2 {
+        right: 42%;
+        top: 19rem;
+        width: 2rem;
+    }
+
+    .bubble-blue-wrapper3 {
+        right: 44%;
+        top: 16.5rem;
+        width: 1rem;
+    }
+
+    // PROJECTS Section 768px
+    .section_projects {
+        height: auto;
+        width: 90%;
+        margin: 12rem auto 0;
+        display: grid;
+    }
+
+    .wavesBg-cards-wrapper {
+        display: none;
+    }
+
+    .introWrapper {
+        display: grid;
+    }
+
+    .heading_intro {
+        text-align: center;
+    }
+
+    .introContainer-img {
+        grid-template-columns: 1fr 1fr;
+        // margin: auto;
+    }
+
+
+    // Section AdSense Google
+    .empty-space-ads {
+        top: 69rem;
+    }
+
+    // PROJECTS Section 2 768px
+    .section_projects2 {
+        display: flex;
+    }
+
+    .intro2Wrapper {
+        display: grid;
+    }
+
+    .heading_intro2 {
+        text-align: center;
+        margin-bottom: 3rem;
+        text-shadow: 0 .3rem .4rem $black-pearl;
+    }
+
+    .introContainer2-img {
+        margin-left: 0;
+    }
+
+    .intro2_wrapper-img {
+        margin: 1.2rem auto;
+    }
+
+    .intro2_wrapper-img2 {
+        margin: 1.2rem auto;
+    }
+
+    // App Section 768px
+    /* Images Trail App Sign up / Log in */
+    .app-img-resp-container {
+        display: flex;
+        width: 90%;
+        margin: 6rem auto 3rem;
+    }
+
+    .sign-up-wrapper {
+        width: 18rem;
+        margin: 1.2rem;
+    }
+
+    .sign-up-img {
+        width: 100%;
+    }
+
+    .sign-up-form-wrapper {
+        width: 19rem;
+        margin: -2rem 2rem;
+    }
+
+    .sign-up-form-img {
+        width: 100%;
+    }
+
+    .login-app-wrapper {
+        width: 18rem;
+        margin: 1.2rem;
+    }
+
+    .login-app-img {
+        width: 100%;
+    }
+
+    /* END Trail App Sign up / Log in */
+
+    #intro-section {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .heading-title-app {
+        font-size: 4.6rem;
+        text-align: center;
+        margin-top: 8rem;
+    }
+
+    .description-intro {
+        margin: 2rem auto 0;
+    }
+
+    .modal-bg-app {
+        display: none;
+    }
+
+    .cta {
+        padding: 2.1rem 0rem 0rem 0rem;
+        font-family: "Poppins", sans-serif;
+        text-align: center;
+    }
+
+    .phone-container {
+        display: none;
+    }
+
+    #bm {
+        margin: 0;
+        display: none;
+    }
+
+    .waves {
+        width: 30rem;
+        transform: translateX(30%);
+        margin: auto;
+        display: none;
+    }
+
+    .phone-stand {
+        width: 100%;
+        margin-left: -10.5rem;
+        margin-top: -2rem;
+        display: none;
+    }
+
+    .lines,
+    .plasa {
+        display: none;
+    }
+
+    // AdSense Google Ads 
+    .empty-space-ads2 {
+        top: 260rem;
+    }
+
+    // HOSTING Section 768px
+    #hosting-section {
+        margin-top: 16rem;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .hosting-container {
+        text-align: center;
+        margin: 0;
+        position: relative;
+        left: 0;
+        top: 0;
+    }
+
+    .hosting-heading {
+        margin: 0;
+    }
+
+    .hosting-and {
+        left: 87%;
+        margin: 0;
+    }
+
+    .hosting-heading2 {
+        text-align: center;
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    .hosting-img-container {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 11rem;
+        margin-bottom: 10rem;
+    }
+
+    .wrapper-data-host-img,
+    .wrapper-host-img,
+    .wrapper-domain-host-img {
+        background: linear-gradient(227deg, $color-blue-dark, $color-blue-dark2);
+        border-radius: 3rem;
+        width: 22rem;
+        height: 30rem;
+        position: static;
+        animation: none;
+
+        &:hover {
+            transform: none;
+        }
+    }
+
+    .data-host-img {
+        width: 74%;
+        display: flex;
+        margin: -3rem auto 4rem;
+    }
+
+    .host-title {
+        display: flex;
+        color: $color-gray;
+        justify-content: center;
+        text-decoration: underline;
+    }
+
+    .data-host-btn,
+    .host-btn,
+    .domain-host-btn {
+        font-size: $default-font-size;
+        padding: .7rem 4rem;
+        display: flex;
+        margin: 2rem auto;
+        position: static;
+    }
+
+    .host-img {
+        width: 74%;
+        display: flex;
+        margin: -3rem auto 5rem;
+    }
+
+    .domain-host-img {
+        width: 68%;
+        display: flex;
+        margin: -3rem auto 4rem;
+    }
+
+    .domain-bg-wire {
+        display: none;
+    }
+
+    // ADS Section 768px
+    #section-ads {
+        width: 100vw;
+        flex-direction: column;
+    }
+
+    .container-ads {
+        display: flex;
+        flex-direction: column;
+        order: 1;
+    }
+
+    .ads-shape-bg {
+        background: linear-gradient(227deg, rgba($color-blue-dark2, .6), rgba($color-blue-dark, .6));
+        display: flex;
+        justify-content: center;
+        width: auto;
+        height: auto;
+        position: static;
+        margin-top: 0;
+        border-radius: 0;
+    }
+
+    .wrapper-fb-ads {
+        width: 8rem;
+        height: 8rem;
+        margin: auto;
+        position: static;
+    }
+
+    .wrapper-insta-ads {
+        width: 8.8rem;
+        height: 8.8rem;
+        /* text-align: center; */
+        margin: auto;
+        position: static;
+    }
+
+    .wrapper-twitter-ads {
+        width: 7.8rem;
+        height: 7.8rem;
+        margin: auto;
+        position: static;
+    }
+
+    .wrapper-youtube-ads {
+        width: 11.5rem;
+        /* height: 10.5rem; */
+        margin: auto;
+        position: static;
+    }
+
+    .wrapper-google-ads {
+        width: 8.2rem;
+        height: 8.2rem;
+        margin: auto;
+        position: static;
+    }
+
+    .container-heading-ads {
+        padding-left: 0;
+        order: 2;
+    }
+
+    .ads-gradient-line {
+        order: 3;
+    }
+
+    .wrapper-heading-ads {
+        /* position: absolute; */
+        /* left: 44%; */
+        text-align: center;
+        margin-bottom: 3rem;
+    }
+
+    .heading-ads-line {
+        margin: 2rem auto 0;
+    }
+
+    .wrapper-description-ads {
+        width: 50rem;
+        margin: 3rem auto;
+    }
+
+    // Price Cards Section 850px
+
+    .purpleShape-card,
+    .blueShape-card {
+        width: 70%;
+    }
+
+    .titlePrice1 {
+        font-size: 3.6rem;
+        margin-top: -45rem;
+        position: absolute;
+        left: 38.5%;
+    }
+
+    .titlePrice2 {
+        font-size: 3.6rem;
+        margin-top: -45rem;
+        position: absolute;
+        right: 38.5%;
+    }
+
+    .blueRow1,
+    .blueRow2,
+    .blueRow3,
+    .purpleRow1,
+    .purpleRow2,
+    .purpleRow3 {
+        width: 26rem;
+        margin: 2.4rem 0;
+    }
+
+    .titleRows1,
+    .titleRows2,
+    .titleRows3,
+    .titleRows4,
+    .titleRows5,
+    .titleRows6 {
+        font-size: 1.8rem;
+    }
+
+    .price-gradient-line {
+        margin-top: -9rem;
+    }
+
+    // LLC Business Section 850px
+    .llc-img-wrapper {
+        width: 18rem;
+    }
+
+    .temple-img-wrapper {
+        width: 8rem;
+        left: 45%;
+    }
+
+    .heading-state-title {
+        font-size: 3.5rem;
+        left: 45.7%;
+        margin-top: 14rem;
+    }
+
+    .heading-state-title2 {
+        font-size: 3rem;
+        left: 41.5%;
+        margin-top: 19.2rem;
+    }
+
+    .heading-state-title3 {
+        font-size: 1.8rem;
+        letter-spacing: 1rem;
+        left: 42.1%;
+        margin-top: 23rem;
+    }
+
+    .state-img-wrapper {
+        width: 40rem;
+    }
+
+    .money-img-wrapper {
+        width: 18rem;
+    }
+
+    .business-gradient-line {
+        height: 35vh;
+    }
+
+
+    // MANAGERS Section 850px
+    .managers-heading {
+        padding: 0;
+    }
+
+    .managers-img-container {
+        margin-top: -20rem;
+    }
+
+    .managers-gradient-line {
+        margin-top: -34rem;
+    }
+
+    // OUR TEAM Section 850px 
+    #our-team-main {
+        padding-bottom: 4rem;
+    }
+
+    .team-city-img-wrapper {
+        left: 67%;
+    }
+
+    .team-city-img {
+
+        &:hover {
+            transform: none;
+        }
+    }
+
+    .our-team-btn {
+        margin: -30rem auto 0;
+    }
+
+    .ourteam-gradient-line {
+        margin-top: -28.5rem;
+    }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {}

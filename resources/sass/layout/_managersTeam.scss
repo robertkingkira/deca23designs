@@ -1,0 +1,172 @@
+#managers-team {
+    // margin-top: 30rem;
+}
+
+.managers-container {
+    height: 90vh;
+    width: 100%;
+    background: linear-gradient($black-pearl, 30%, rgba($black-pearl, .8), transparent), url('/img/office.png');
+    background-position: 0% 80%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    -webkit-box-shadow: 0 1rem 1rem $color-gray1;
+    box-shadow: 0 1rem 1rem $color-gray1;
+}
+
+.managers-heading-wraper {
+    // margin-left: 6rem;
+    text-align: center;
+}
+
+.managers-heading {
+    font-size: 7rem;
+    font-weight: 500;
+    letter-spacing: .6rem;
+    text-transform: uppercase;
+    font-family: $font3;
+    color: $color-white;
+    padding-top: 6rem;
+    text-shadow: 0 .4rem .4rem $black-pearl;
+}
+
+
+.managers-heading-line {
+    width: 12rem;
+    height: .4rem;
+    background: $color-gray;
+    border-radius: 1.2rem;
+    margin: auto;
+    // position: relative;
+    // left: 45%;
+    box-shadow: 0 .3rem .4rem $color-gray1;
+}
+
+.managers-img-container {
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+}
+
+.managers-img-wrapper {
+    display: block;
+}
+
+.manager-left-img {
+    height: 21rem;
+    width: 21rem;
+    border: 1.2rem solid $color-gray;
+    border-radius: 100%;
+    background: url('/img/kira.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow: hidden;
+    // position: absolute;
+    // left: 10%;
+    // top: -44rem;
+    margin-top: -43rem;
+    box-shadow: 0 .3rem .4rem $black-pearl;
+    transition: all .4s ease-in-out;
+
+    &:hover {
+        box-shadow: 0 .6rem .6rem $matte-blue2;
+        transform: scale(1.2);
+
+    }
+}
+
+.manager-left-btn {
+    font-size: 1.8rem;
+    padding: .8rem 1.2rem;
+    width: 14rem;
+    // position: absolute;
+    // left: 12.5%;
+    // top: -8rem;
+    display: flex;
+    justify-content: center;
+    margin: 8rem auto 0;
+    color: $color-gray;
+    background: $color-blue-dark;
+    border: none;
+    border-radius: 2.1rem;
+    transition: .3s ease-in-out;
+
+    &:hover {
+        background: $color-blue-dark2;
+        box-shadow: 0 .3rem .5rem $color-black;
+        transform: translateY(-.3rem);
+    }
+
+    /* &:focus {
+        outline: none;
+    } */
+}
+
+
+.managers-img-wrapper2 {
+    display: block;
+}
+
+.manager-right-img {
+    height: 21rem;
+    width: 21rem;
+    border: 1.2rem solid $color-gray;
+    border-radius: 100%;
+    background: url('/img/phanio.png');
+    background-size: 160%;
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow: hidden;
+    // position: absolute;
+    // right: 10%;
+    // top: -44rem;
+    margin-top: -43rem;
+    box-shadow: 0 .3rem .4rem $black-pearl;
+    transition: all .4s ease-in-out;
+
+    &:hover {
+        box-shadow: 0 .6rem .6rem $matte-blue2;
+        transform: scale(1.2);
+    }
+}
+
+.manager-right-btn {
+    font-size: 1.8rem;
+    padding: .8rem 1.2rem;
+    width: 14rem;
+    // position: absolute;
+    // right: 12%;
+    // top: -8rem;
+    display: flex;
+    justify-content: center;
+    margin: 8rem auto 0;
+    color: $color-gray;
+    background: $color-blue-dark;
+    border: none;
+    border-radius: 2.1rem;
+    transition: .3s ease-in-out;
+
+    &:hover {
+        background: $color-blue-dark2;
+        box-shadow: 0 .3rem .5rem $color-black;
+        transform: translateY(-.3rem);
+    }
+
+    /* &:focus {
+        outline: none;
+    } */
+
+}
+
+.managers-gradient-line {
+    width: 100%;
+    height: 33vh;
+    background: linear-gradient(to top, $black-pearl, 40%, rgba($black-pearl, .6), transparent);
+    margin-top: -26rem;
+}
+
+
+// .manager-left-img,
+// .manager-right-img {
+//     width: 100%;
+// }

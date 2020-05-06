@@ -1,0 +1,351 @@
+// Animatie Phone WELCOME
+
+#intro-section {
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    width: 90%;
+    min-height: 60vh;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+#header-intro {
+    flex: 1 1 40rem;
+}
+
+
+.heading-title-app {
+    font-size: 5rem;
+    font-weight: 400;
+    background: linear-gradient(to right, $color-gray1, $color-gray2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: $font-family-sans-serif;
+}
+
+.description-intro {
+    margin-top: .5rem;
+    font-size: 2.2rem;
+    font-weight: 300;
+    color: $color-gray3;
+    width: 70%;
+}
+
+
+.phone-container {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1 1;
+}
+
+#bm {
+    width: 23rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    position: relative;
+    right: -30.5%;
+    top: 0%;
+    -webkit-transform: translate(40%, 20%);
+    transform: translate(40%, 20%);
+    -webkit-filter: drop-shadow(0 .1rem .2rem $matte-blue);
+    filter: drop-shadow(0 .1rem .2rem $matte-blue);
+    z-index: 10;
+    -webkit-transition: .6s;
+    transition: .6s;
+
+
+    &:hover {
+        -webkit-transform: translate(38%, 18%);
+        transform: translate(38%, 18%);
+    }
+}
+
+
+.waves {
+    width: 30rem;
+    position: relative;
+    right: 10%;
+    // top: 70%;
+    -webkit-transform: translateX(25%);
+    transform: translateX(25%);
+    // z-index: -3;
+}
+
+.phone-stand {
+    width: 30rem;
+    // position: absolute;
+    // top: -3%;
+    margin-left: 16rem;
+    margin-top: -2rem;
+    -webkit-filter: drop-shadow(0 .3rem .5rem $color-black);
+    filter: drop-shadow(0 .3rem .5rem $color-black);
+}
+
+.lines {
+    width: 40rem;
+    position: absolute;
+    right: -40.5%;
+    top: -180%;
+    -webkit-transform: translate(16%, 80px);
+    transform: translate(16%, 80px);
+    z-index: -3;
+    -webkit-filter: drop-shadow(0 .3rem .5rem $color-black);
+    filter: drop-shadow(0 .3rem .5rem $color-black);
+}
+
+.black-lines-phone {
+    width: 100%;
+}
+
+.plasa {
+    width: 37rem;
+    position: absolute;
+    right: -32.5%;
+    top: -84%;
+    -webkit-transform: translate(24%, -80px);
+    transform: translate(24%, -80px);
+    z-index: -4;
+    overflow: hidden;
+    // filter: drop-shadow(0 .3rem .5rem $color-black);
+}
+
+.plasa-phone-img {
+    width: 100%;
+}
+
+// More Details for Application
+.modal-bg-app {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background: linear-gradient(to right bottom, rgba($color-gray1, .6), rgba($matte-blue, .6));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    // z-index: 10;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.5s;
+}
+
+.bg-active {
+    visibility: visible;
+    opacity: 1;
+}
+
+.modal-container {
+    position: relative;
+    background-color: $color-white;
+    width: 40%;
+    height: 40%;
+    border-radius: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0 1rem 1.6rem rgba($color-blue-dark2, .8);
+}
+
+.modal-close {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: $default-font-size;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+
+// .modal-title {
+//     font-size: 5rem;
+//     font-family: $font-family-sans-serif;
+//     letter-spacing: .2rem;
+//     font-weight: 300;
+//     color: $color-gray;
+//     padding-bottom: 1.2rem;
+//     padding-top: 3rem;
+// }
+
+// .title-line {
+//     width: 12rem;
+//     height: .1rem;
+//     background-color: $color-white;
+//     display: block;
+//     margin-bottom: 2.1rem;
+// }
+
+.modal-description {
+    font-size: $default-font-size;
+    font-family: $poppins;
+    font-weight: 200;
+    color: $color-gray4;
+    text-align: left;
+    padding: .3rem 2rem;
+}
+
+
+// Details for App PRICE
+.modal-bg-app2 {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background: linear-gradient(to right bottom, rgba($color-gray1, .6), rgba($matte-blue, .6));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    // z-index: 10;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.5s;
+}
+
+.modal-container2 {
+    position: relative;
+    background-color: $color-white;
+    width: 40%;
+    height: 40%;
+    border-radius: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0 1rem 1.6rem rgba($color-blue-dark2, .8);
+}
+
+.modal-close2 {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: $default-font-size;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#close-btn-more,
+#close-btn-price {
+    position: absolute;
+    bottom: 1.6rem;
+    border: .2rem solid $matte-purple;
+    border-radius: 2.1rem;
+    background: transparent;
+    color: $matte-purple;
+    padding: .2rem 2rem;
+    cursor: pointer;
+    font-size: $default-font-size;
+    letter-spacing: .2rem;
+    font-family: $poppins;
+    box-shadow: 0rem .4rem .4rem rgba($color-blue-dark2, .8);
+}
+
+.bg-active-price {
+    visibility: visible;
+    opacity: 1;
+}
+
+// .modal-title2 {
+//     font-size: 5rem;
+//     font-family: $font-family-sans-serif;
+//     letter-spacing: .2rem;
+//     font-weight: 300;
+//     color: $color-gray;
+//     padding-bottom: 1.2rem;
+//     padding-top: 3rem;
+// }
+
+// .title-line2 {
+//     width: 12rem;
+//     height: .1rem;
+//     background-color: $color-white;
+//     display: block;
+//     margin-bottom: 2.1rem;
+// }
+
+.modal-description2 {
+    font-size: $default-font-size;
+    font-family: $poppins;
+    font-weight: 200;
+    color: $color-gray4;
+    text-align: left;
+    padding: .3rem 2rem;
+}
+
+// Buttons More / App for Applications
+.cta {
+    padding: 2.1rem 0rem 0rem 0rem;
+    font-family: $poppins;
+}
+
+.cta-More {
+    border: .2rem solid $matte-purple;
+    border-radius: 2.1rem;
+    background: transparent;
+    color: $matte-purple;
+    padding: .4rem 3rem;
+    // width: 15rem;
+    // height: 5rem;
+    cursor: pointer;
+    font-size: $default-font-size;
+    letter-spacing: .2rem;
+    font-family: $poppins;
+    box-shadow: 0rem .4rem .4rem rgba($color-blue-dark2, .8);
+
+
+    &:hover {
+        color: $color-white;
+        background: $matte-blue2;
+        border: .2rem solid $matte-blue2;
+    }
+
+    // &:focus {
+    //     outline: 0;
+    // }
+}
+
+.cta-App {
+    border: .2rem solid $color-blue-dark2;
+    border-radius: 2.1rem;
+    background: $matte-blue2;
+    color: $color-white;
+    padding: .4rem 3rem;
+    margin-left: 3.2rem;
+    // width: 15rem;
+    // height: 5rem;
+    cursor: pointer;
+    font-size: $default-font-size;
+    letter-spacing: .2rem;
+    font-family: $poppins;
+    box-shadow: 0rem .4rem .4rem rgba($color-blue-dark2, .8);
+
+    &:hover {
+        color: $matte-purple;
+        background: transparent;
+        border: .2rem solid $matte-purple;
+    }
+
+    // &:focus {
+    //     outline: 0;
+    // }
+}
+
+// Responsive App img container
+.app-img-resp-container {
+    display: none;
+}

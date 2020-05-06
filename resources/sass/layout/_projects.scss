@@ -1,0 +1,205 @@
+.section_projects {
+    height: auto;
+    width: 90%;
+    margin: 21rem auto 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.wavesBg-cards-wrapper {
+    width: 30rem;
+    position: absolute;
+    left: 0;
+    top: 98%;
+    z-index: -1;
+}
+
+.wavesBg-cards {
+    width: 100%;
+}
+
+
+.introWrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    width: 90%;
+    margin: auto;
+}
+
+.introContainer-img {
+    display: flex;
+    flex-wrap: wrap;
+    // position: relative;
+    // right: -9%;
+    margin-left: 8rem;
+}
+
+.intro_wrapper-img,
+.intro_wrapper-img2,
+.intro_wrapper-img3,
+.intro_wrapper-img4,
+.intro_wrapper-img5,
+.intro_wrapper-img6 {
+    display: block;
+    width: 24rem;
+    height: 17rem;
+    margin: 1.2rem;
+    // order: 2;
+    background: url('/img/site1.png');
+    background-size: 100%;
+    background-position: center;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+
+    &:hover {
+        background-size: 120%;
+        -webkit-filter: drop-shadow(0 .5rem .5rem $black-pearl);
+        filter: drop-shadow(0 .5rem .5rem $black-pearl);
+    }
+}
+
+/* Cu poza normala tag <img> in HTML 
+
+.intro_wrapper-img {
+    display: block;
+    float: left;
+    width: 25%;
+    padding: 1rem;
+    // order: 2;
+    transition: all .3s ease-in-out;
+
+    &:hover {
+        transform: scale(1.1);
+        filter: drop-shadow(0 .5rem .5rem $black-pearl);
+    }
+} */
+
+.projects_intro {
+    margin-right: 3rem;
+}
+
+
+/* Cu poza tag <img> in HTML
+.introProjects-img {
+    width: 100%;
+    height: 18rem;
+} */
+
+.heading_intro {
+    // width: 33rem;
+    font-size: 4rem;
+    text-align: left;
+    color: $color-gray;
+    text-shadow: 0 .3rem .4rem $black-pearl;
+    /* background: linear-gradient(to right, $color-purple1, $matte-purple);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; */
+    font-family: $font-family-sans-serif;
+}
+
+.descripton_intro {
+    // display: block;
+    font-size: $default-font-size;
+    color: $black-shaft;
+    width: 50rem;
+    margin-top: 2.1rem;
+    text-align: left;
+}
+
+
+
+.carousel_Projects {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 85%;
+    overflow: hidden;
+    margin: auto;
+    // grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    // margin-top: 8rem;
+}
+
+
+/* .wrap-projects {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-top: 4rem;
+    margin-bottom: 3rem;
+    margin-left: 1.2rem;
+    margin-right: 1.2rem;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    height: 60rem;
+    width: 60rem;
+    border-radius: 2.1em;
+} */
+
+/* .wrap-projects .projects {
+    // transition: all .3s ease-out;
+    // background: $matte-purple;
+    // border-radius: 2.1rem;
+    display: block;
+
+} */
+
+
+/* .wrap-projects .projects .projects-img {
+    border-radius: 2.1rem;
+    width: 40rem;
+    height: 26rem;
+    -o-object-fit: cover;
+    object-fit: cover;
+    // object-position: 50% 10%;
+    -webkit-box-shadow: 0 .2rem .9rem .1rem $color-black;
+    box-shadow: 0 .2rem .9rem .1rem $color-black;
+} */
+
+
+.breaking-line-projects {
+    width: 50rem;
+    height: 2.2rem;
+    background: linear-gradient(227deg, $color-gray3, $color-gray1);
+    border-radius: 1.2rem;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 6rem;
+}
+
+.rolling-ball-projects {
+    width: 17rem;
+    height: 1.2rem;
+    background: radial-gradient($color-gray5, $color-gray2);
+    border-radius: 1rem;
+    position: absolute;
+    left: 40%;
+    margin-top: .45rem;
+    animation: rolling-ball 6s linear 1s infinite alternate;
+}
+
+@keyframes rolling-ball {
+    0% {
+        transform: translateX(-18rem);
+    }
+
+    100% {
+        transform: translateX(11.8rem);
+    }
+}
